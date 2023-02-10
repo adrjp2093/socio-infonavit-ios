@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,49 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SOCIO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-2L-DsZ">
+                                <rect key="frame" x="87" y="421" width="116" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INFONAVIT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0s-Fq-HDk">
+                                <rect key="frame" x="211" y="421" width="116" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infonavitlogo" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-f9-Rd9">
+                                <rect key="frame" x="76" y="421" width="64" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="7cC-HL-57Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.31372549019607843" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C0s-Fq-HDk" secondAttribute="trailing" constant="87" id="2uY-qo-Un6"/>
+                            <constraint firstItem="C0s-Fq-HDk" firstAttribute="leading" secondItem="SQY-f9-Rd9" secondAttribute="trailing" constant="71" id="5JP-Vj-ILa"/>
+                            <constraint firstItem="SQY-f9-Rd9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="LyA-KO-E5a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SQY-f9-Rd9" secondAttribute="bottom" constant="392" id="NqR-uJ-s9Z"/>
+                            <constraint firstItem="3Fm-2L-DsZ" firstAttribute="bottom" secondItem="C0s-Fq-HDk" secondAttribute="bottom" id="PqV-Xg-hdZ"/>
+                            <constraint firstItem="3Fm-2L-DsZ" firstAttribute="top" secondItem="C0s-Fq-HDk" secondAttribute="top" id="Slk-bz-a12"/>
+                            <constraint firstItem="SQY-f9-Rd9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="377" id="TvW-tO-TEh"/>
+                            <constraint firstItem="C0s-Fq-HDk" firstAttribute="leading" secondItem="3Fm-2L-DsZ" secondAttribute="trailing" constant="8" symbolic="YES" id="cQZ-c6-Lbp"/>
+                            <constraint firstItem="3Fm-2L-DsZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="dUP-yK-Tme"/>
+                            <constraint firstItem="SQY-f9-Rd9" firstAttribute="top" secondItem="3Fm-2L-DsZ" secondAttribute="top" id="sfy-1y-llu"/>
+                            <constraint firstItem="3Fm-2L-DsZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tSG-gM-sWs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="infonavitlogo" width="473" height="428"/>
+    </resources>
 </document>

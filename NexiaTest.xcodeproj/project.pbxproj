@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		A510949B298DB9750050933E /* NexiaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5109499298DB9750050933E /* NexiaTest.xcdatamodeld */; };
 		A510949D298DB9760050933E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A510949C298DB9760050933E /* Assets.xcassets */; };
 		A51094A0298DB9760050933E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A510949E298DB9760050933E /* LaunchScreen.storyboard */; };
+		A59601892992F9D600DD25BD /* BenevitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601882992F9D600DD25BD /* BenevitsController.swift */; };
+		A596018D2992FB1600DD25BD /* CollectonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596018C2992FB1600DD25BD /* CollectonTableViewCell.swift */; };
+		A59601912992FB6700DD25BD /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601902992FB6700DD25BD /* TableCollectionViewCell.swift */; };
+		A59601942992FC1B00DD25BD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601932992FC1B00DD25BD /* Models.swift */; };
+		A596019F2993017800DD25BD /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = A596019E2993017800DD25BD /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,10 @@
 		A510949C298DB9760050933E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A510949F298DB9760050933E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51094A1298DB9760050933E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59601882992F9D600DD25BD /* BenevitsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenevitsController.swift; sourceTree = "<group>"; };
+		A596018C2992FB1600DD25BD /* CollectonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectonTableViewCell.swift; sourceTree = "<group>"; };
+		A59601902992FB6700DD25BD /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
+		A59601932992FC1B00DD25BD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A596019F2993017800DD25BD /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +70,26 @@
 			children = (
 				A5109490298DB9750050933E /* AppDelegate.swift */,
 				A5109492298DB9750050933E /* SceneDelegate.swift */,
-				A5109494298DB9750050933E /* ViewController.swift */,
-				A5109496298DB9750050933E /* Main.storyboard */,
-				A510949C298DB9760050933E /* Assets.xcassets */,
+				A596018B2992FA0E00DD25BD /* Cells */,
 				A510949E298DB9760050933E /* LaunchScreen.storyboard */,
+				A5109496298DB9750050933E /* Main.storyboard */,
+				A5109494298DB9750050933E /* ViewController.swift */,
+				A59601882992F9D600DD25BD /* BenevitsController.swift */,
 				A51094A1298DB9760050933E /* Info.plist */,
 				A5109499298DB9750050933E /* NexiaTest.xcdatamodeld */,
+				A59601932992FC1B00DD25BD /* Models.swift */,
+				A510949C298DB9760050933E /* Assets.xcassets */,
 			);
 			path = NexiaTest;
+			sourceTree = "<group>";
+		};
+		A596018B2992FA0E00DD25BD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A596018C2992FB1600DD25BD /* CollectonTableViewCell.swift */,
+				A59601902992FB6700DD25BD /* TableCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +108,9 @@
 			dependencies = (
 			);
 			name = NexiaTest;
+			packageProductDependencies = (
+				A596019E2993017800DD25BD /* SkeletonView */,
+			);
 			productName = NexiaTest;
 			productReference = A510948D298DB9750050933E /* NexiaTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +138,9 @@
 				Base,
 			);
 			mainGroup = A5109484298DB9750050933E;
+			packageReferences = (
+				A596019D2993017800DD25BD /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = A510948E298DB9750050933E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +170,10 @@
 			files = (
 				A5109495298DB9750050933E /* ViewController.swift in Sources */,
 				A5109491298DB9750050933E /* AppDelegate.swift in Sources */,
+				A59601892992F9D600DD25BD /* BenevitsController.swift in Sources */,
+				A59601942992FC1B00DD25BD /* Models.swift in Sources */,
+				A596018D2992FB1600DD25BD /* CollectonTableViewCell.swift in Sources */,
+				A59601912992FB6700DD25BD /* TableCollectionViewCell.swift in Sources */,
 				A5109493298DB9750050933E /* SceneDelegate.swift in Sources */,
 				A510949B298DB9750050933E /* NexiaTest.xcdatamodeld in Sources */,
 			);
@@ -345,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A596019D2993017800DD25BD /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.30.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A596019E2993017800DD25BD /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A596019D2993017800DD25BD /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A5109499298DB9750050933E /* NexiaTest.xcdatamodeld */ = {
